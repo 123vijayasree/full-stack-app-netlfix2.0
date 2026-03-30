@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* optional fade-in animation */
+@keyframes fadeIn {
+  from { opacity: -1; }
+  to { opacity: 1; }
+}
+
+
+.splash-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://flixnet.epizy.com/wp-content/uploads/2023/03/IN-en-20230320-popsignuptwoweeks-perspective_alpha_website_medium-3.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-size: 10rem;
+  animation: fadeOut 1000s forwards;
+  -webkit-animation: fadeOut 1000s forwards;
+}
+
+.splash-page h1 {
+  font-size: 7rem; /* slightly bigger */
+  color: #e50914; /* Netflix red fill */
+  font-weight: bold;
+  -webkit-text-stroke: 0px #111111; /* black border */
+  text-wrap-style: 0.5px #000; /* for some browsers */
+  text-align: center;
+  margin: 0;
+}
+
+.splash-page p {
+  font-size: 2rem;
+  color: #fff;
+  margin-top: 20px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
